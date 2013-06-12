@@ -1,6 +1,7 @@
-# Raspberry Pi and SSH (running headless on a second machine)
+# Raspberry Pi and SSH #
+#### (running headless on a second machine) ####
 
-This guide will walk you through the basic steps for setting up your Raspberry Pi to run *headless* (meaning not connected to a monitor or keayboard) on a second machine. This guide will only work on your local network, as connecting to the Raspberry Pi from outside the local network requires several additional steps (including changes to ports and routers). That will be covered in a different guide. At the end of setting up your Raspberry Pi for SSH use, I will outline how to connect to the Raspberry Pi from a Mac OS X or similar UNIX machine. The guide below is written for Debian-based distributions such as Raspbian, Wheezy, and Occidentalis (to name a few). It assumes you have created an SD card complete with a distribution and have the appropriate Raspberry Pi tools:
+This guide will walk you through the basic steps for setting up your Raspberry Pi to run *headless* (meaning not connected to a monitor or keyboard) on a second machine. This guide will only work on your local network, as connecting to the Raspberry Pi from outside the local network requires several additional steps (including changes to ports and routers). This process will be covered in a different guide. At the end of setting up your Raspberry Pi for SSH use, I will outline how to connect to the Raspberry Pi from a Mac OS X or similar UNIX machine. The guide below is written for Debian-based distributions such as Raspbian, Wheezy, and Occidentalis (to name a few). It assumes you have created an SD card complete with a distribution and have the appropriate Raspberry Pi tools:
 	* Raspberry Pi board
 	* SD card with operating system loaded
 	* Power supply (likely micro-USB to USB cable with 5v adapter or another source)
