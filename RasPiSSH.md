@@ -24,10 +24,10 @@ To begin setting up your Raspberry Pi for running headless, there are some chang
 
 Once the power is connected, you should see a variety of blinking LED's on the Raspberry Pi. If the SD card slot is the "front" of the Raspberry Pi, and the Ethernet port the "back" of the Raspberry Pi, the LED's are in this order (from front to back):
 
-* ACT (Green) == Lights up to indicate when the SD card is accessed
-* PWR (Red) == Lights up to indicate 3.3V power is connected
-* FDX (Green) == Lights up if network adapter is a full duplex operation
-* LNK (Green) == Lights up to indicate network activity (internet)
-* 100 (Yellow) == Lights up only when the network connection is 100mbps (some boards mislabeled 10M)
+* ACT (Green) == Lights up to indicate when the SD card is accessed *flashing*
+* PWR (Red) == Lights up to indicate 3.3V power is connected *solid*
+* FDX (Green) == Lights up if network adapter is a full duplex operation *flash*
+* LNK (Green) == Lights up to indicate network activity (internet) *solid*
+* 100 (Yellow) == Lights up only when the network connection is 100mbps (some boards mislabeled 10M) *solid*
 
 You should see a solid red PWR light, a flashing ACT light, a flashing LNK light, and some level of activity on the FDX and 100 lights (eventually solid). If all the LED's are active, you should see a boot log on your screen. This is the machine loading your operating system and all peripherals.
