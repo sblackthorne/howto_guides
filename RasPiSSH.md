@@ -26,8 +26,13 @@ Once the power is connected, you should see a variety of blinking LED's on the R
 
 * ACT (Green) == Lights up to indicate when the SD card is accessed *flashing*
 * PWR (Red) == Lights up to indicate 3.3V power is connected *solid*
-* FDX (Green) == Lights up if network adapter is a full duplex operation *flash*
+* FDX (Green) == Lights up if network adapter is a full duplex operation *solid*
 * LNK (Green) == Lights up to indicate network activity (internet) *solid*
 * 100 (Yellow) == Lights up only when the network connection is 100mbps (some boards mislabeled 10M) *solid*
 
-You should see a solid red PWR light, a flashing ACT light, a flashing LNK light, and some level of activity on the FDX and 100 lights (eventually solid). If all the LED's are active, you should see a boot log on your screen. This is the machine loading your operating system and all peripherals.
+You should see a solid red PWR light, a flashing ACT light, a flashing LNK light, and some level of activity on the FDX and 100 lights (eventually all three network connection lights are solid). If all the LED's are active, you should see a boot log on your screen. This is the machine loading your operating system and all peripherals. 
+
+*If this is the very first time you are using your Raspberry Pi, the default username and password will still be in effect. For Raspbian/Wheezy/Occidentalis/Debian-based distributions, these will be:
+* Username: pi
+* Password: raspberry
+
