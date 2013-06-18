@@ -34,5 +34,5 @@ You should see a solid red PWR light, a flashing ACT light, a flashing LNK light
 
 *If this is the very first time you are using your Raspberry Pi, the default username and password will still be in effect. For Raspbian/Wheezy/Occidentalis/Debian-based distributions, these will be:
 * Username: pi
-* Password: raspberry
+* Password: raspberry*
 
