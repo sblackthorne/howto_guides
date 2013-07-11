@@ -42,9 +42,12 @@ If you are in a graphical desktop, use the **LXTerminal** icon to open an active
 
 ## Configuring the Raspberry Pi for SSH ##
 
-Once you've entered the command-line interface, run the 'sudo raspi-config' command. This will open a utilities configuration box. In this box you can change a variety of settings for your Raspberry Pi, but for the purposes of using the Raspberry Pi headless, there are only a few settings we need to change. 
+Once you've entered the command-line interface, run the 'sudo raspi-config' command. This will open a utilities configuration box. In this box you can change a variety of settings for your Raspberry Pi, but for the purposes of using the Raspberry Pi headless, there are only a few settings we need to change.
 
 First, we need to manage the way the computer boots upon start-up. Choose the "Enable Boot to Desktop" option. On the "Should we boot straight to desktop?" screen, choose "No." This will ensure that your Raspberry Pi will boot to the command-line interface, allowing you to SSH into it.
 
 Second, we need to enable SSH for the Raspberry Pi. Under "Advanced Options," choose "A4 SSH." You want to enable SSH, so choose that option and press return. Your screen will flash back to the command-line interface, run the command, and then return to the configuration window. Press return to select "Ok" and you will return to the main setup screen. Go back into the "Advanced Options" and select "A2 Hostname." Pay attention to the hostname restrictions and change the hostname to something distinctive and memorable. The purpose of changing the hostname is to consistently identify the Raspberry Pi on the network. This will also be handy when we set up the Raspberry Pi to connect remotely from outside the local network (a future tutorial).
 
+Another setting you can change from the 'sudo raspi-config' command is the password for your username. It can be important to change this password if you are going to be saving personal documents on your Raspberry Pi, and since most distributions come with the default password as 'raspberry,' you'll want to be a bit more creative. When you run the 'sudo raspi-config' command, the second option allows you change the password for the default user, in this case the user 'pi.' (If you choose to create an additional/different user, you will need to set one of those as the default to use this option.)
+
+At this point, be sure you have the username and password for your Raspberry Pi handy, as you will need them every time you SSH into it from another machine. The next piece of information you will need is the IP address for the Raspberry Pi machine on your local network. 
